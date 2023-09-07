@@ -24,11 +24,11 @@ sequenceDiagram
     server-->>browser: reloads the JavaScript file
     deactivate server
 
-    Note right of browser: The browser execute the JavaScript code that fetches the JSON from the server again, including the new note
+    Note right of browser: The JavaScript is code that fetches the JSON from the server is executed again, including the new note
 
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
     activate server
     server-->>browser: [{ "content": "Hello there", "date": "2023-09-07T09:32:11.998Z" }, ... ]
     deactivate server
 
-    Note right of browser: The browser executes the callback function that rerenders the notes
+    Note right of browser: The browser executes the callback function which rerenders the notes
